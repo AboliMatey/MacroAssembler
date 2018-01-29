@@ -1,0 +1,18 @@
+	mov esi,%1
+%%abc:
+	mov edi,%2
+	add esi,edi
+	cmp esi,100
+	jle %%abc
+	mov eax,esi
+	mov esi,%1	
+%%abc:
+	myadd 2
+	mov esi,%2
+	add edii,esi
+	cmp edi,100
+	jle %%abc
+	mov ebx,edi
+	mov eax,%2
+	mov edx,%3
+	add ebx,%1
